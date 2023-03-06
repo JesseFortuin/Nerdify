@@ -13,7 +13,7 @@ namespace Nerdify.Test
         public void NerdifyTest(string input, string expected)
         {
             //arrange
-            ICharacterReplacer replacer = CharacterReplacer.Nerdify(input);
+            ICharacterReplacer replacer = new CharacterReplacer();
 
             //act
             string actual = replacer.Nerdify(input);
